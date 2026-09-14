@@ -17,7 +17,7 @@ import java.util.Map;
 public class SeeHandler{
     
     private static final Gson GSON=new Gson();
-    private static final Map<SeeAction,SeeActionHandler> HANDLERS=new EnumMap<SeeAction,SeeActionHandler>(SeeAction.class);
+    private static final Map<SeeAction,SeeActionHandler> HANDLERS=new EnumMap<>(SeeAction.class);
     private static MinecraftAdapter minecraft;
     
     public static void initialize(MinecraftAdapter minecraft){
